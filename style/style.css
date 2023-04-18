@@ -1,0 +1,9 @@
+@import "./default.css";
+
+@import "./header/header.css";
+@import "./section/intro/intro.css";
+@import "./section/doctors-opinion/doctors-opinion.css";
+@import "./section/our-products/our-products.css";
+@import "./section/water-ionized/water-ionized.css";
+@import "./section/water-property/water-property.css";
+@import "./footer/footer.css";

@@ -1,0 +1,62 @@
+/* colors */
+
+:root {
+  --main-color: #1a2046;
+  --second-color: #42307c;
+  --primary-color: #ffffff;
+  --accent-color: #4eedc6;
+  --right-gradient: #2992db;
+  --left-gradient: #45ceac;
+  --line-color: #544094;
+}
+
+/* padding and gap */
+
+:root {
+  --padding-small: 15px;
+  --padding-medium: 25px;
+  --padding-large: 45px;
+  --gap-small: 15px;
+  --gap-medium: 30px;
+  --gap-large: 45px;
+}
+
+/* screens */
+
+:root {
+  --desktop: 1570px; /* 1366px */
+  --mobile: 360px;
+}
+
+/* effects */
+
+:root {
+  --transition-hover: 1s;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(./fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(./fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}

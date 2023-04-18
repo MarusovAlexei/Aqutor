@@ -1,0 +1,44 @@
+@import "./../../variables.css";
+
+.intro__img {
+  position: relative;
+}
+
+.absolut {
+  position: absolute;
+}
+
+.intro__img-bottle {
+  z-index: 2;
+  top: 200px;
+  left: -45px;
+}
+
+.intro__img-ionizer {
+  position: relative;
+  z-index: 5;
+  width: 512px;
+  height: 518px;
+}
+
+.intro__img-water1 {
+  top: -90px;
+  left: 20px;
+  z-index: 4;
+}
+
+.intro__img-water2 {
+  z-index: 3;
+  top: 20px;
+  right: -235px;
+}
+
+.intro__img-shape1 {
+  z-index: 2;
+  top: 390px;
+}
+
+.intro__img-shape2 {
+  z-index: 1;
+  top: 485px;
+}

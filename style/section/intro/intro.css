@@ -1,0 +1,25 @@
+@import "./../../variables.css";
+@import "./intro_img.css";
+@import "./intro_content.css";
+
+.intro {
+  height: 965px;
+  position: relative;
+  z-index: 1;
+  top: -100px;
+  background: linear-gradient(
+    to bottom right,
+    var(--second-color),
+    var(--main-color)
+  );
+  padding-top: 160px;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  justify-content: center;
+  position: relative;
+}

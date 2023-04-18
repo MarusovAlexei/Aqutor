@@ -1,0 +1,102 @@
+@import "./../variables.css";
+
+header {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--line-color);
+  position: relative;
+  z-index: 5;
+}
+
+.header__container {
+  max-width: var(--desktop);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 10px;
+  gap: 90px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-medium);
+}
+
+.header__logo-img img {
+  width: 65px;
+}
+
+.header__logo-name {
+  max-width: 120px;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 1.12em;
+}
+
+.header__nav-menu-items {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+}
+
+.nav-menu-item a {
+  color: var(--primary-color);
+}
+
+.nav-menu-item:hover a {
+  color: var(--accent-color);
+  transition: var(--transition-hover);
+}
+
+.header__right-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header__basket {
+}
+
+.header__basket-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: linear-gradient(
+    to bottom right,
+    var(--left-gradient),
+    var(--right-gradient)
+  );
+}
+
+.header__basket-img img {
+  height: 25px;
+}
+
+.header__basket-counter {
+}
+
+.header__telephone-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+}
+
+.header__telephone-item {
+}
