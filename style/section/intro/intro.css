@@ -7,11 +7,7 @@
   position: relative;
   z-index: 1;
   top: -100px;
-  background: linear-gradient(
-    to bottom right,
-    var(--second-color),
-    var(--main-color)
-  );
+  background: var(--main-color);
   padding-top: 144px;
 }
 
@@ -21,5 +17,4 @@
   align-items: flex-start;
   justify-content: center;
   position: relative;
- 
 }

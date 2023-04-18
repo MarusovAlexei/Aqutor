@@ -50,3 +50,8 @@
   z-index: 2;
   top: 470px;
 }
+
+.intro__img-shape3 {
+  z-index: 0;
+  top: -145px;
+}
