@@ -12,14 +12,14 @@
     var(--second-color),
     var(--main-color)
   );
-  padding-top: 160px;
+  padding-top: 144px;
 }
 
 .intro__container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 100px;
   justify-content: center;
   position: relative;
+ 
 }
