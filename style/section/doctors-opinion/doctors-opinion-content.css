@@ -1,0 +1,54 @@
+@import "./../../variables.css";
+
+.doctor-opinion__content {
+  display: flex;
+  height: 575px;
+  border-bottom: 1px solid #302e66;
+}
+
+.doctor-opinion__description-items {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  color: var(--primary-color);
+  display: flex;
+  gap: 20px;
+  width: 945px;
+  flex-direction: column;
+}
+
+.doctor-opinion__content {
+  padding-top: 22px;
+  padding-left: 5px;
+}
+
+.doctor-opinion__description-img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  color: var(--primary-color);
+}
+
+.description-img__img {
+  top: -100px;
+  right: -84px;
+}
+
+.description-img__name {
+  top: 312px;
+  left: -19px;
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  width: 329px;
+  height: 114px;
+  background-color: rgba(26, 32, 71, 0.8);
+  padding-top: 19px;
+  padding-right: 28px;
+  text-align: right;
+}
+
+.description-img__doctor {
+  top: 389px;
+  left: 135px;
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+}
