@@ -6,7 +6,7 @@
   height: 965px;
   position: relative;
   z-index: 1;
-  top: -100px;
+ 
   background: var(--main-color);
   padding-top: 144px;
 }

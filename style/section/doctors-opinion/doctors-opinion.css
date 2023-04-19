@@ -4,7 +4,7 @@
 .doctor-opinion {
   background-color: var(--main-color);
   position: relative;
-  top: -100px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
