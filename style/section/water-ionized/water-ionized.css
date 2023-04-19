@@ -1,0 +1,23 @@
+@import "./../../variables.css";
+@import "./water-ionized-img.css";
+@import "./water-ionized-content.css";
+
+.water-ionized {
+  background-color: var(--main-color);
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1030px;
+  padding-top: 162px;
+  background-image: url(./../../../assets/img/sections/water-ionized/background.png);
+  background-position: bottom right;
+}
+
+.water-ionized__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--desktop);
+}

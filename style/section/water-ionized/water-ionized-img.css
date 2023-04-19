@@ -1,0 +1,23 @@
+@import "./../../variables.css";
+
+.water-ionized__content {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.water-ionized__img-shape1 {
+  top: -298px;
+  left: 63px;
+}
+
+.water-ionized__img-shape2 {
+  top: 630px;
+  left: 63px;
+}
+
+.water-ionized__img-glass {
+  top: 88px;
+  left: 565px;
+  z-index: 2;
+}
