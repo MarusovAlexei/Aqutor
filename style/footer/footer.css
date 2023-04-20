@@ -1,8 +1,11 @@
 @import "./../variables.css";
 
 footer {
-  height: 63vh;
+  height: 49vh;
   background-color: #171c3f;
+  background-image: url(./../../assets/img/footer/bgi-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer__container {
@@ -12,7 +15,7 @@ footer {
   justify-content: space-between;
   margin: 0 auto;
   height: 100%;
-  padding: 40px 10px;
+  padding: 40px 10px 10px;
 }
 
 .footer__container-left-content {
