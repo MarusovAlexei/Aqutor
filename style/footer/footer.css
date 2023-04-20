@@ -1,4 +1,130 @@
+@import "./../variables.css";
+
 footer {
   height: 63vh;
   background-color: #171c3f;
+}
+
+.footer__container {
+  width: var(--desktop);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  padding: 40px 10px;
+}
+
+.footer__container-left-content {
+  width: 345px;
+}
+
+.left-content__logo {
+  padding-bottom: 10px;
+}
+
+.left-content__name-company {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--primary-color);
+  padding-bottom: 15px;
+}
+
+.left-content__contacts {
+  font-family: "Roboto-Medium";
+  font-size: 28px;
+  color: var(--accent-color);
+  height: 63px;
+}
+
+.left-content__email {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--accent-color);
+  padding-left: 4px;
+  margin-bottom: 63px;
+}
+
+.left-content__social {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.footer__container-center-content {
+  padding: 90px 10px;
+  line-height: 30px;
+  width: 503px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.center-content__text {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+.footer__container-right-content {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  padding: 93px 10px 10px;
+}
+
+.right-content__description {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.right-content__input {
+  width: 98%;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: #9da0b8;
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.right-content__form-checkbox {
+  margin-bottom: 31px;
+}
+
+.right-content__checkbox-label {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: #3c4165;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-content__checkbox-input {
+  width: 25px;
+  height: 40px;
+  display: block;
+}
+
+.right-content__btn {
+  background: linear-gradient(
+    to bottom right,
+    var(--left-gradient),
+    var(--right-gradient)
+  );
+  border: none;
+  width: 57%;
+  height: 56px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  color: var(--primary-color);
 }
