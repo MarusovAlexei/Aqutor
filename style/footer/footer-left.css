@@ -1,0 +1,62 @@
+@import "./../variables.css";
+
+.footer__container-left-content {
+  width: 345px;
+  padding: 0 10px;
+}
+
+.left-content__logo {
+  padding-bottom: 10px;
+}
+
+.left-content__name-company {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--primary-color);
+  padding-bottom: 15px;
+}
+
+.left-content__contacts {
+  font-family: "Roboto-Medium";
+  font-size: 28px;
+  color: var(--accent-color);
+  height: 63px;
+}
+
+.left-content__email {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: var(--accent-color);
+  padding-left: 4px;
+  margin-bottom: 63px;
+}
+
+.left-content__social {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  max-width: 325px;
+  min-width: 220px;
+}
+
+@media (max-width: 1100px) {
+  .left-content__name-company {
+    font-size: 12px;
+  }
+
+  .left-content__contacts {
+    font-size: 18px;
+  }
+
+  .left-content__email {
+    font-size: 12px;
+  }
+
+  .left-content__logo {
+    width: 60px;
+    padding-top: 30px;
+  }
+}
