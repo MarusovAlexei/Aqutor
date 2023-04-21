@@ -1,0 +1,194 @@
+@import "./../../variables.css";
+
+.card-items {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./../../../assets/img/sections/our-products/bgi-item.png);
+  width: 458px;
+  height: 660px;
+  padding-top: 17px;
+}
+
+.card-item__labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.card-item__label-price {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  color: #2f3974;
+  text-align: end;
+  height: 31px;
+  width: 136px;
+  background-image: url(./../../../assets/img/sections/our-products/label1.png);
+  background-position: end;
+  background-repeat: no-repeat;
+  padding-right: 18px;
+  padding-top: 4px;
+  margin-bottom: 6px;
+}
+
+.card-item__label-plan {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  color: #2f3974;
+  text-align: end;
+  height: 31px;
+  width: 136px;
+  background-image: url(./../../../assets/img/sections/our-products/label2.png);
+  background-position: end;
+  background-repeat: no-repeat;
+  padding-right: 18px;
+  padding-top: 4px;
+}
+
+.card-item__img {
+  height: 45.3%;
+}
+
+.card-item__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 15px;
+  gap: 8px;
+}
+
+.card-item__category {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.card-item__product {
+  font-family: "Roboto-Medium";
+  font-size: 26px;
+  color: var(--accent-color);
+  width: 50%;
+}
+
+.card-item__price {
+  font-family: "Roboto-Medium";
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+.card-item__previous-price {
+  font-family: "Roboto-Light";
+  font-size: 26px;
+  color: #43519f;
+  margin-left: 25px;
+}
+
+.cross-out {
+  position: relative;
+}
+
+.cross-out:before {
+  content: "";
+  border-bottom: 1px solid #43519f;
+  position: absolute;
+  width: 120%;
+  height: 90%;
+  transform: rotate(351deg);
+  top: -45%;
+  left: -10%;
+}
+
+.card-item__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  padding-top: 38px;
+  gap: 20px;
+}
+
+.card-item__btn-left,
+.card-item__btn-right,
+.our-products__btn-shope {
+  width: 44%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.card-item__btn-left,
+.our-products__btn-shope {
+  background: linear-gradient(
+    to bottom right,
+    var(--left-gradient),
+    var(--right-gradient)
+  );
+  border: none;
+}
+
+.card-item__btn-right {
+  color: var(--primary-color);
+  border: 2px solid skyblue;
+  background: none;
+}
+
+@media (max-width: 785px) {
+  .card-item__price {
+    font-size: 20px;
+  }
+
+  .card-item__product,
+  .card-item__previous-price {
+    font-size: 18px;
+  }
+
+  .card-item__category,
+  .card-item__btn-left,
+  .card-item__btn-right {
+    font-size: 10px;
+  }
+
+  .card-item__label-plan,
+  .card-item__label-price {
+    font-size: 12px;
+    width: 90px;
+    padding-right: 9px;
+    padding-top: 10px;
+  }
+
+  .card-item {
+    width: 280px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    height: 420px;
+  }
+
+  .card-item__img {
+    height: 160px;
+    width: 165px;
+  }
+
+  .card-item__btn {
+    padding-top: 10px;
+    height: 50px;
+  }
+
+  .card-item__product {
+    width: 60%;
+  }
+}
