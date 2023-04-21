@@ -5,7 +5,7 @@
 @import "./footer-right.css";
 
 footer {
-  /*  height: 475px; */
+  min-height: 475px;
   background-color: var(--main-color);
   background-image: url(./../../assets/img/footer/bgi-footer.png);
   background-repeat: no-repeat;
@@ -26,5 +26,6 @@ footer {
 @media (max-width: 785px) {
   .footer__container {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
