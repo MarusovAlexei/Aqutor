@@ -1,0 +1,42 @@
+@import "./../variables.css";
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-medium);
+}
+
+.header__logo-img {
+  width: 65px;
+}
+
+.header__logo-img img {
+  width: 100%;
+}
+
+.header__logo-name {
+  max-width: 120px;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 1.12em;
+}
+
+@media (max-width: 520px) {
+  .header__logo {
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__logo-img {
+    width: 30px;
+  }
+
+  .header__logo-name {
+    font-size: 10px;
+    text-align: center;
+  }
+}

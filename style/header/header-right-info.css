@@ -1,0 +1,74 @@
+@import "./../variables.css";
+
+.header__right-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header__basket {
+}
+
+.header__basket-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: linear-gradient(
+    to bottom right,
+    var(--left-gradient),
+    var(--right-gradient)
+  );
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.25);
+  cursor: pointer;
+}
+
+.header__basket-img img {
+  height: 25px;
+}
+
+.header__basket-counter {
+}
+
+.header__telephone-items {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat-Medium";
+  font-size: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__telephone-item1 {
+  margin-right: 20px;
+}
+
+@media (max-width: 1470px) {
+  .header__telephone-items {
+    width: 150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__right-info {
+    gap: 15px;
+  }
+
+  .header__basket-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__basket-img img {
+    height: 15px;
+  }
+
+  .header__telephone-items {
+    font-size: 10px;
+    width: 101px;
+  }
+}
