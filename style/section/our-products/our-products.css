@@ -52,6 +52,14 @@
 }
 
 @media (max-width: 785px) {
+  .our-products {
+    padding-top: 75px;
+  }
+
+  .our-products__container {
+    padding-top: 25px;
+  }
+
   .our-products__header {
     font-size: 25px;
   }
