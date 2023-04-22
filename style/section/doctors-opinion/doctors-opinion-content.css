@@ -2,8 +2,15 @@
 
 .doctor-opinion__content {
   display: flex;
-  height: 575px;
+  min-height: 575px;
   border-bottom: 1px solid #302e66;
+  padding-top: 22px;
+  padding-left: 5px;
+  /*  */
+  gap: 35px;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  /*  */
 }
 
 .doctor-opinion__description-items {
@@ -12,15 +19,14 @@
   color: var(--primary-color);
   display: flex;
   gap: 20px;
-  width: 945px;
   flex-direction: column;
+  /*  */
+  max-width: 945px;
+  padding-right: 10px;
+  /*  */
 }
 
-.doctor-opinion__content {
-  padding-top: 22px;
-  padding-left: 5px;
-}
-
+/* 
 .doctor-opinion__description-img {
   position: relative;
   width: 500px;
@@ -51,4 +57,68 @@
   left: 135px;
   font-family: "Montserrat-Regular";
   font-size: 12px;
+}
+ */
+
+.doctor-opinion__description-img {
+  width: 566px;
+  min-height: 500px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.description-img__img {
+  margin-top: -153px;
+}
+
+.description-img__name {
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  width: 329px;
+  height: 114px;
+  background-color: rgba(26, 32, 71, 0.8);
+  padding-top: 19px;
+  padding-right: 28px;
+  text-align: right;
+  top: 312px;
+  left: -65px;
+}
+
+.description-img__doctor {
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+  top: 389px;
+  left: 88px;
+}
+
+@media (max-width: 1572px) {
+  .description-img__img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 785px) {
+  .doctor-opinion__content {
+    gap: 0;
+  }
+
+  .doctor-opinion__description-img {
+    width: 250px;
+    min-height: 315px;
+  }
+
+  .description-img__name {
+    font-size: 12px;
+    top: 205px;
+    left: -85px;
+    padding-top: 12px;
+    width: 250px;
+    height: 65px;
+  }
+
+  .description-img__doctor {
+    font-size: 10px;
+    top: 250px;
+    left: 15px;
+  }
 }

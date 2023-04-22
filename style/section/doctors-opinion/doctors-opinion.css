@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1215px;
+  min-height: 1215px;
   padding-top: 95px;
 }
 
@@ -16,8 +16,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: var(--desktop);
   padding-left: 5px;
+  /*  */
+  max-width: var(--desktop);
+
+  /*  */
 }
 
 .water-opinion__header {
@@ -46,7 +49,8 @@
   color: var(--accent-color);
   padding-top: 25px;
   padding-left: 6px;
-  height: 85px;
+  padding-right: 10px;
+  min-height: 85px;
 }
 
 .doctor-opinion__btn {
@@ -69,4 +73,42 @@
   cursor: pointer;
 
   margin-left: 8px;
+}
+
+@media (max-width: 1572px) {
+  .water-opinion__header {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .water-opinion__header-accent {
+    font-size: 110px;
+    margin: 0 auto;
+  }
+
+  .doctor-opinion__reviews {
+    margin: 0 auto;
+  }
+
+  .doctor-opinion__btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 785px) {
+  .doctor-opinion__btn {
+    width: 250px;
+    font-size: 18px;
+    height: 60px;
+    margin: 20px auto 0;
+  }
+
+  .water-opinion__header {
+    font-size: 25px;
+  }
+
+  .water-opinion__header-accent {
+    font-size: 30px;
+  }
 }
