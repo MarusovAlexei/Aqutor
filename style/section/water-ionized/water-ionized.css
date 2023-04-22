@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1030px;
+  min-height: 1030px;
   padding-top: 162px;
   background-image: url(./../../../assets/img/sections/water-ionized/background.png);
   background-position: bottom right;
@@ -20,4 +20,59 @@
   flex-direction: column;
   align-items: center;
   width: var(--desktop);
+}
+
+.water-ionized__content {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+.water-ionized__header {
+  height: 59px;
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Montserrat-Bold";
+  color: var(--accent-color);
+  text-align: center;
+  letter-spacing: 0.001em;
+  line-height: 1.2em;
+  position: relative;
+  z-index: 5;
+}
+
+.water-ionized__description {
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat-Regular";
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 5;
+  padding-left: 14px;
+}
+
+@media (max-width: 1300px) {
+  .water-ionized {
+    background-position: bottom;
+    padding-bottom: 20px;
+    background-size: cover;
+  }
+
+  .water-ionized__container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 785px) {
+  .water-ionized__header {
+    font-size: 25px;
+  }
+
+  .water-ionized__content {
+    font-size: 18px;
+  }
+
+  .water-ionized__container {
+    width: 300px;
+  }
 }
