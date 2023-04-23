@@ -1,0 +1,21 @@
+.opinion__description-text__animation {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.opinion__description-img__animation {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.opinion__description-btn__animation {
+  opacity: 0;
+}
+
+.opinion__description-text__animation.show-text,
+.opinion__description-img__animation.show-img,
+.opinion__description-btn__animation.show-btn {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+}

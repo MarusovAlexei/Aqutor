@@ -72,4 +72,15 @@ spawn("ionized-item5__animation", "show-item5");
 spawn("ionized-item6__animation", "show-item6");
 
 // glass
-spawn("ionized-glass__animation","show-glass")
+spawn("ionized-glass__animation", "show-glass");
+
+/* doctors-opinion */
+
+// description
+spawn("opinion__description-text__animation", "show-text");
+
+// image
+spawn("opinion__description-img__animation", "show-img");
+
+// batton
+spawn("opinion__description-btn__animation", "show-btn");

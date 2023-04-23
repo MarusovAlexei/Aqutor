@@ -362,39 +362,10 @@
               height="120"
             />
           </svg>
-          <style type="text/css">
-            #watertext {
-              font-family: Montserrat-Bold, sans-serif;
-              font-weight: bold;
-              text-transform: uppercase;
-              font-size: 100px;
-              text-anchor: middle;
-            }
-            .water-fill {
-              animation: wave 0.7s infinite linear,
-                fill-up 10s infinite ease-out alternate;
-            }
-            @keyframes wave {
-              0% {
-                x: -400px;
-              }
-              100% {
-                x: 0;
-              }
-            }
-            @keyframes fill-up {
-              0% {
-                height: 0;
-                y: 130px;
-              }
-              100% {
-                height: 160px;
-                y: -30px;
-              }
-            }
-          </style>
           <div class="doctor-opinion__content">
-            <div class="doctor-opinion__description-items">
+            <div
+              class="doctor-opinion__description-items opinion__description-text__animation"
+            >
               <div class="doctor-opinion__description-item">
                 «Много лет при гипертонии пил лекарства горстями, но однажды на
                 помощь пришла щелочная вода!»
@@ -425,7 +396,9 @@
                 подкрадется к самому главному нашему органу – сердцу!
               </div>
             </div>
-            <div class="doctor-opinion__description-img">
+            <div
+              class="doctor-opinion__description-img opinion__description-img__animation"
+            >
               <div class="description-img__img">
                 <img
                   src="./assets/img/sections/doctors-opinion/doctor.png"
@@ -440,11 +413,17 @@
               </div>
             </div>
           </div>
-          <div class="doctor-opinion__reviews">
+          <div
+            class="doctor-opinion__reviews opinion__description-text__animation"
+          >
             Больше отзывов о нашей продукции вы можете прочитать или написать
             свой на отдельной странице.
           </div>
-          <button class="doctor-opinion__btn">ЧИТАТЬ ВСЕ ОТЗЫВЫ</button>
+          <button
+            class="doctor-opinion__btn opinion__description-btn__animation"
+          >
+            ЧИТАТЬ ВСЕ ОТЗЫВЫ
+          </button>
         </div>
       </section>
       <section class="our-products">
