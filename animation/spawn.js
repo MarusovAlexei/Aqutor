@@ -1,6 +1,6 @@
 /* spawn animation */
 
-const spawn = (defaultClass, activeClass) => {
+const spawn = (defaultClass, activeClass, option = 0.5) => {
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
@@ -10,7 +10,7 @@ const spawn = (defaultClass, activeClass) => {
   }
 
   let options = {
-    threshold: [0.5],
+    threshold: [option],
   };
 
   let observer = new IntersectionObserver(onEntry, options);
@@ -67,7 +67,7 @@ spawn("property-text__animation", "show-text");
 /* water-ionized */
 
 // background section
-spawn("ionized-bg__animation", "show-bg");
+spawn("ionized-bg__animation", "show-bg", 0);
 
 // items
 spawn("ionized-item1__animation", "show-item1");
