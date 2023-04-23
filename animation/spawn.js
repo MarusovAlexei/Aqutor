@@ -67,7 +67,7 @@ spawn("property-text__animation", "show-text");
 /* water-ionized */
 
 // background section
-spawn("ionized-bg__animation", "show-bg", 0);
+spawn("ionized-bg__animation", "show-bg", 0.05);
 
 // items
 spawn("ionized-item1__animation", "show-item1");
