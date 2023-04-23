@@ -1,0 +1,86 @@
+.property-ionizator__animation {
+  opacity: 0;
+}
+
+.property-ionizator__animation.ionizator-show {
+  opacity: 1;
+  transition: all 3s;
+}
+
+.property-item-right__animation {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.property-item-right__animation.item-right-show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+}
+
+.property-item-left__animation {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.property-item-left__animation.item-left-show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+}
+
+.property-item-bottom__animation {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.property-item-bottom__animation.item-bottom-show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+}
+
+.property-water-bg__animation {
+  opacity: 0;
+}
+
+.property-water-bg__animation.water-bg-show {
+  opacity: 1;
+  transition: all 2s;
+  transition-delay: 1.5s;
+}
+
+.property-water__animation {
+  opacity: 0;
+}
+
+.property-water__animation.water-show {
+  opacity: 1;
+  transition: all 2s;
+  transition-delay: 2s;
+}
+
+@media (max-width: 785px) {
+  .property-item-right__animation,
+  .property-item-bottom__animation {
+    transform: translateX(-50px);
+  }
+
+  .property-item-right__animation.item-right-show,
+  .property-item-bottom__animation.item-bottom-show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0%);
+  }
+
+  .property-item-left__animation {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  .property-item-left__animation.item-left-show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0%);
+  }
+}

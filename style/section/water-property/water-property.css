@@ -1,6 +1,7 @@
 @import "./../../variables.css";
 @import "./water-property-content.css";
 @import "./water-property-img.css";
+@import "./water-property-animation.css";
 
 .water-property {
   background-color: var(--main-color);

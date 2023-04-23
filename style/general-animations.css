@@ -1,0 +1,17 @@
+.header-animation,
+.header-animation__under {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.header-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+.header-animation__under.element-show__under {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateY(0%);
+}
