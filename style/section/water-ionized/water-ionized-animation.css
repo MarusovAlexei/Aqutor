@@ -1,0 +1,89 @@
+.ionized-bg__animation {
+  opacity: 0;
+}
+
+.ionized-bg__animation.show-bg {
+  opacity: 1;
+  transition: 2s;
+}
+
+.ionized-item1__animation {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.ionized-item1__animation.show-item1 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+}
+
+.ionized-item2__animation {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.ionized-item2__animation.show-item2 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+  transition-delay: 1s;
+}
+
+.ionized-item3__animation {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.ionized-item3__animation.show-item3 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+  transition-delay: 2s;
+}
+
+.ionized-item4__animation {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.ionized-item4__animation.show-item4 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+  transition-delay: 3s;
+}
+
+.ionized-item5__animation {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.ionized-item5__animation.show-item5 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+  transition-delay: 4s;
+}
+
+.ionized-item6__animation {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.ionized-item6__animation.show-item6 {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0%);
+  transition-delay: 5s;
+}
+
+.ionized-glass__animation {
+  opacity: 0;
+}
+
+.ionized-glass__animation.show-glass {
+  opacity: 1;
+  transition: 2s;
+  transition-delay: 6s;
+}
