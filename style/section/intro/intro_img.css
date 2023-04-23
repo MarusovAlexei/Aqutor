@@ -4,7 +4,6 @@
   position: relative;
   margin-left: -86px;
   top: 10px;
- /*  background-image: url(./../../../assets/img/sections/intro/ionizer.png); */
 }
 
 .absolut {
@@ -85,7 +84,6 @@
     width: 154px;
     left: 29px;
     height: 100px;
-
   }
 
   .intro__img-bottle {
