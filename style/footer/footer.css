@@ -27,5 +27,7 @@ footer {
   .footer__container {
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }

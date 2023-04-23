@@ -175,7 +175,7 @@
     width: 280px;
     padding-bottom: 15px;
     border-radius: 10px;
-    height: 420px;
+    height: 470px;
   }
 
   .card-item__img {
@@ -185,7 +185,14 @@
 
   .card-item__btn {
     padding-top: 10px;
-    height: 50px;
+    flex-direction: column;
+    gap: 10px;
+    height: 110px;
+  }
+
+  .card-item__btn-left,
+  .card-item__btn-right {
+    width: calc(100% - 20px);
   }
 
   .card-item__product {
