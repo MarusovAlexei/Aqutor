@@ -1,14 +1,15 @@
 @import "./../../variables.css";
 
 .intro__img {
-  position: absolute;
-  top: 11px;
-  left: 907px;
+  position: relative;
+  margin-left: -86px;
+  top: 10px;
 }
 
-.intro__img-contsainer {
-  position: relative;
-}
+/* .intro__img-contsainer {
+  position: absolute;
+  left: -1035px;
+} */
 
 .absolut {
   position: absolute;
@@ -54,4 +55,65 @@
 .intro__img-shape3 {
   z-index: 0;
   top: -145px;
+}
+
+@media (max-width: 1280px) {
+  .intro__img-ionizer {
+    width: 295px;
+    left: -77px;
+    top: 400px;
+    z-index: 20;
+  }
+
+  .intro__img-bottle {
+    top: 517px;
+    left: -100px;
+    width: 99px;
+    z-index: 19;
+  }
+
+  .intro__img-water1 {
+    top: 270px;
+    left: 17px;
+  }
+
+  .intro__img-water2 {
+    top: 396px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 785px) {
+  .intro__img-ionizer {
+    top: 49px;
+    width: 154px;
+    left: 29px;
+    height: 100px;
+  }
+
+  .intro__img-bottle {
+    top: 109px;
+    left: 20px;
+    width: 53px;
+  }
+
+  .intro__img-water1 {
+    top: -10px;
+    left: 31px;
+    width: 123px;
+  }
+
+  .intro__img-water2 {
+    top: 29px;
+    right: -75px;
+    width: 127px;
+  }
+
+  .intro__img-shape1 {
+    top: 495px;
+  }
+
+  .intro__img-shape2 {
+    top: 525px;
+  }
 }

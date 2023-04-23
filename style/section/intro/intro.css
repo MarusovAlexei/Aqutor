@@ -3,11 +3,15 @@
 @import "./intro_content.css";
 
 .intro {
-  height: 965px;
+  min-height: 965px;
   position: relative;
   z-index: 1;
   background: var(--main-color);
   padding-top: 144px;
+  background-image: url(./../../../assets/img/sections/intro/Shape3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .intro__container {
@@ -17,4 +21,21 @@
   justify-content: center;
   position: relative;
   height: 100%;
+}
+
+@media (max-width: 785px) {
+  .intro {
+    min-height: 830px;
+  }
+
+  .intro__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro {
+    min-height: 730px;
+  }
 }
