@@ -80,16 +80,22 @@
 
 @media (max-width: 785px) {
   .intro__img-ionizer {
-    top: 49px;
-    width: 154px;
-    left: 29px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .intro__img-ionizer img {
+    max-height: 100%;
+    margin: 0 auto;
   }
 
   .intro__img-bottle {
-    top: 109px;
-    left: 20px;
-    width: 53px;
+    width: 65px;
+    left: 35px;
+    top: 69px;
   }
 
   .intro__img-water1 {
@@ -100,7 +106,8 @@
 
   .intro__img-water2 {
     top: 29px;
-    right: -75px;
+
+    right: 0;
     width: 127px;
   }
 
