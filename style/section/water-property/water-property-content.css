@@ -2,7 +2,7 @@
 
 .water-property__header {
   height: 116px;
-  width: 1050px;
+  max-width: 1060px;
   font-size: 48px;
   font-weight: 800;
   font-family: "Montserrat-Bold";
@@ -12,6 +12,7 @@
   line-height: 1.2em;
   position: relative;
   z-index: 5;
+  padding: 0 10px;
 }
 
 .water-property__description {
@@ -21,4 +22,13 @@
   letter-spacing: -0.02em;
   position: relative;
   z-index: 5;
+  padding: 0 10px;
+}
+
+@media (max-width: 785px) {
+  .water-property__header,
+  .water-property__description {
+    font-size: 25px;
+    text-align: center;
+  }
 }

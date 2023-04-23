@@ -127,3 +127,187 @@
   display: flex;
   width: 100px;
 }
+
+@media (max-width: 1539px) {
+  .water-property__img-salad,
+  .water-property__img-pumpkin {
+    right: -50px;
+  }
+
+  .water-property__img-apple,
+  .water-property__img-banana {
+    left: -50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .water-property__img-items {
+    width: 600px;
+  }
+
+  .water-property__img-circle {
+    width: 500px;
+    top: 30px;
+    right: 50px;
+  }
+
+  .water-property__img-ionizator {
+    top: 160px;
+    left: 170px;
+    width: 250px;
+  }
+
+  .water-property__img-light {
+    top: -23px;
+    left: -50px;
+  }
+
+  .water-property__img-water1 {
+    width: 270px;
+    top: 50px;
+    left: 90px;
+  }
+
+  .water-property__img-water2 {
+    top: 42px;
+    left: 170px;
+  }
+
+  .water-property__img-water3 {
+    width: 350px;
+    top: 145px;
+    left: 25px;
+  }
+
+  .water-property__img-water4 {
+    width: 350px;
+    top: 185px;
+    right: 0;
+  }
+
+  .water-property__img-shadow {
+    top: 290px;
+    left: 110px;
+  }
+
+  .water-property__img-salad {
+    width: 250px;
+    height: 140px;
+    top: 480px;
+    right: 0;
+  }
+
+  .water-property__img-pumpkin {
+    width: 250px;
+    height: 140px;
+    top: 640px;
+    right: 0;
+  }
+
+  .water-property__img-apple {
+    width: 250px;
+    height: 140px;
+    top: 480px;
+    left: 0;
+  }
+
+  .water-property__img-banana {
+    width: 250px;
+    height: 140px;
+    top: 640px;
+    left: 0;
+  }
+
+  .water-property__img-carrot {
+    width: 250px;
+    top: 760px;
+    left: 230px;
+  }
+
+  .water-property__img-carrot img {
+    width: 140px;
+  }
+
+  .img-descrition-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 785px) {
+  .water-property__img-items {
+    width: 300px;
+  }
+
+  .water-property__img-apple {
+    top: 380px;
+    left: 50px;
+  }
+
+  .water-property__img-banana {
+    top: 590px;
+    left: 50px;
+  }
+
+  .water-property__img-salad {
+    top: 274px;
+    right: 50px;
+  }
+
+  .water-property__img-pumpkin {
+    top: 486px;
+    right: 50px;
+  }
+
+  .water-property__img-carrot {
+    top: 705px;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .water-property__img-ionizator {
+    width: 120px;
+    left: 90px;
+    top: 100px;
+  }
+
+  .water-property__img-water1 {
+    width: 140px;
+    top: 46px;
+    left: 28px;
+  }
+
+  .water-property__img-water2 {
+    width: 140px;
+    top: 44px;
+    left: 99px;
+  }
+
+  .water-property__img-water3 {
+    width: 140px;
+    top: 120px;
+    left: 0;
+  }
+
+  .water-property__img-water4 {
+    width: 140px;
+    top: 101px;
+    right: 5px;
+  }
+
+  .water-property__img-shadow {
+    width: 180px;
+    left: 58px;
+    top: 178px;
+  }
+
+  .water-property__img-light {
+    top: 0px;
+    left: -28px;
+  }
+
+  .water-property__img-circle {
+    width: 250px;
+    right: 30px;
+  }
+}
