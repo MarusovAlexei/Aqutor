@@ -8,7 +8,7 @@
 
 .property-ionizator__animation.ionizator-show {
   opacity: 1;
-  transition: all 2s;
+  transition: all 1.5s;
 }
 
 .property-shadow__animation {
@@ -60,7 +60,7 @@
 
 .property-water-bg__animation.water-bg-show {
   opacity: 1;
-  transition: all 1s;
+  transition: all 2s;
   transition-delay: 0.5s;
 }
 
@@ -70,7 +70,7 @@
 
 .property-water__animation.water-show {
   opacity: 1;
-  transition: all 1s;
+  transition: all 2s;
   transition-delay: 1s;
 }
 
