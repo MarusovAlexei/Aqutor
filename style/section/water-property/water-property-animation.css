@@ -1,3 +1,7 @@
+:root {
+  --transition-time: 0.75s;
+}
+
 .property-ionizator__animation {
   opacity: 0;
 }
@@ -13,8 +17,8 @@
 
 .property-shadow__animation.show-shadow {
   opacity: 1;
-  transition: all 2s;
-  transition-delay: 1s;
+  transition: all 1s;
+  transition-delay: 1.5s;
 }
 
 .property-item-right__animation {
@@ -56,8 +60,8 @@
 
 .property-water-bg__animation.water-bg-show {
   opacity: 1;
-  transition: all 2s;
-  transition-delay: 1.5s;
+  transition: all 1s;
+  transition-delay: 0.5s;
 }
 
 .property-water__animation {
@@ -66,13 +70,14 @@
 
 .property-water__animation.water-show {
   opacity: 1;
-  transition: all 2s;
-  transition-delay: 2s;
+  transition: all 1s;
+  transition-delay: 1s;
 }
 
 .property-text__animation {
   opacity: 0;
 }
+
 .property-text__animation.show-text {
   opacity: 1;
   transition: all 2s;
@@ -88,7 +93,7 @@
   .property-item-right__animation.item-right-show,
   .property-item-bottom__animation.item-bottom-show {
     opacity: 1;
-    transition: all 2s;
+    transition: all var(--transition-time);
     transform: translateX(0%);
   }
 
@@ -99,7 +104,12 @@
 
   .property-item-left__animation.item-left-show {
     opacity: 1;
-    transition: all 2s;
+    transition: all var(--transition-time);
     transform: translateX(0%);
+  }
+
+  .property-text__animation.show-text {
+    transition: all var(--transition-time);
+    transition-delay: 1s;
   }
 }
