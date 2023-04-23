@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 785px) {
+  .water-ionized {
+    padding-top: 80px;
+  }
+
   .water-ionized__header {
     font-size: 25px;
   }
