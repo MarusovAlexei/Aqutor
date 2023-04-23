@@ -1,6 +1,7 @@
 @import "./../../variables.css";
 @import "./intro_img.css";
 @import "./intro_content.css";
+@import "./intro-animation.css";
 
 .intro {
   min-height: 965px;

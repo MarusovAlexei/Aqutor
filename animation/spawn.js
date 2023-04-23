@@ -90,3 +90,18 @@ spawn("opinion__description-img__animation", "show-img");
 
 // batton
 spawn("opinion__description-btn__animation", "show-btn");
+
+/* intro */
+
+// batton
+spawn("intro-btn__animation", "show-btn");
+
+// ionizer
+spawn("ionizer__animation", "ionizer-show");
+
+// bottle
+spawn("bottle__animation", "bottle-show");
+
+// water
+spawn("water1__animation", "water1-show");
+spawn("water2__animation", "water2-show");

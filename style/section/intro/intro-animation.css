@@ -1,0 +1,42 @@
+.intro-btn__animation {
+  opacity: 0;
+}
+
+.intro-btn__animation.show-btn {
+  opacity: 1;
+  transition: 2s;
+}
+
+.ionizer__animation {
+  opacity: 0;
+}
+
+.ionizer__animation.ionizer-show {
+  opacity: 1;
+  transition: 0.75s;
+}
+
+.bottle__animation {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.bottle__animation.bottle-show {
+  opacity: 1;
+  transition: 1s;
+  transform: translateX(0%);
+}
+
+.water1__animation,
+.water2__animation {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.water1__animation.water1-show,
+.water2__animation.water2-show {
+  opacity: 1;
+  transition: 0.75s;
+  transition-delay: 0.5s;
+  transform: translateX(0%);
+}

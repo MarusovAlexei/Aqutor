@@ -91,3 +91,33 @@
   transition: var(--time-transition);
   transition-delay: 3s;
 }
+
+@media (max-width: 785px) {
+  .ionized-item1__animation.show-item1 {
+    transition-delay: 0;
+  }
+
+  .ionized-item2__animation.show-item2 {
+    transition-delay: 0;
+  }
+
+  .ionized-item3__animation.show-item3 {
+    transition-delay: 0;
+  }
+
+  .ionized-item4__animation.show-item4 {
+    transition-delay: 0;
+  }
+
+  .ionized-item5__animation.show-item5 {
+    transition-delay: 0s;
+  }
+
+  .ionized-item6__animation.show-item6 {
+    transition-delay: 0;
+  }
+
+  .ionized-glass__animation.show-glass {
+    transition-delay: 0;
+  }
+}
