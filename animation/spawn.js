@@ -34,6 +34,9 @@ spawn("header-animation__under", "element-show__under");
 // ionizator
 spawn("property-ionizator__animation", "ionizator-show");
 
+// shadow
+spawn("property-shadow__animation", "show-shadow");
+
 // item
 spawn("property-item-right__animation", "item-right-show");
 spawn("property-item-left__animation", "item-left-show");
@@ -57,6 +60,9 @@ spawn("property-water-bg__animation", "water-bg-show");
 
 // water
 spawn("property-water__animation", "water-show");
+
+// text
+spawn("property-text__animation", "show-text");
 
 /* water-ionized */
 

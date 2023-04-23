@@ -4,7 +4,17 @@
 
 .property-ionizator__animation.ionizator-show {
   opacity: 1;
-  transition: all 3s;
+  transition: all 2s;
+}
+
+.property-shadow__animation {
+  opacity: 0;
+}
+
+.property-shadow__animation.show-shadow {
+  opacity: 1;
+  transition: all 2s;
+  transition-delay: 1s;
 }
 
 .property-item-right__animation {
@@ -55,6 +65,15 @@
 }
 
 .property-water__animation.water-show {
+  opacity: 1;
+  transition: all 2s;
+  transition-delay: 2s;
+}
+
+.property-text__animation {
+  opacity: 0;
+}
+.property-text__animation.show-text {
   opacity: 1;
   transition: all 2s;
   transition-delay: 2s;
