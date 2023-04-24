@@ -80,8 +80,8 @@
 
 .property-text__animation.show-text {
   opacity: 1;
-  transition: all 2s;
-  transition-delay: 2s;
+  transition: all 1s;
+  transition-delay: 1s;
 }
 
 @media (max-width: 785px) {

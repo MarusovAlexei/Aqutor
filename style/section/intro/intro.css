@@ -22,10 +22,19 @@
   justify-content: center;
   position: relative;
   height: 100%;
+  column-gap: 75px;
+}
+
+@media (max-width: 1282px) {
+  .intro {
+    padding-top: 80px;
+    min-height: 900px;
+  }
 }
 
 @media (max-width: 785px) {
   .intro {
+    padding-top: 120px;
     min-height: 830px;
   }
 

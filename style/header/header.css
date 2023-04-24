@@ -10,13 +10,13 @@ header {
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid var(--line-color);
-  position: relative;
+  position: absolute;
   z-index: 6;
 }
 
 .header__container {
   max-width: var(--desktop);
-  width: 100vw;
+  width: calc(100vw - 17px);
   height: 100px;
   display: flex;
   flex-direction: row;

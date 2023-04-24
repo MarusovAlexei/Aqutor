@@ -1,5 +1,5 @@
 :root {
-  --time-transition: 0.75s;
+  --time-transition: 0.5s;
 }
 
 .ionized-bg__animation {
@@ -8,7 +8,7 @@
 
 .ionized-bg__animation.show-bg {
   opacity: 1;
-  transition: 2s;
+  transition: 1s;
 }
 
 .ionized-item1__animation {
@@ -31,7 +31,7 @@
   opacity: 1;
   transition: all var(--time-transition);
   transform: translateX(0%);
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 
 .ionized-item3__animation {
@@ -43,7 +43,7 @@
   opacity: 1;
   transition: all var(--time-transition);
   transform: translateX(0%);
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 
 .ionized-item4__animation {
@@ -55,7 +55,7 @@
   opacity: 1;
   transition: all var(--time-transition);
   transform: translateX(0%);
-  transition-delay: 1.5s;
+  transition-delay: 1.25s;
 }
 
 .ionized-item5__animation {
@@ -67,7 +67,7 @@
   opacity: 1;
   transition: all var(--time-transition);
   transform: translateX(0%);
-  transition-delay: 2s;
+  transition-delay: 1.5s;
 }
 
 .ionized-item6__animation {
@@ -79,7 +79,7 @@
   opacity: 1;
   transition: all var(--time-transition);
   transform: translateX(0%);
-  transition-delay: 2.5s;
+  transition-delay: 1.75s;
 }
 
 .ionized-glass__animation {
@@ -89,7 +89,7 @@
 .ionized-glass__animation.show-glass {
   opacity: 1;
   transition: var(--time-transition);
-  transition-delay: 3s;
+  transition-delay: 2s;
 }
 
 @media (max-width: 785px) {

@@ -22,6 +22,10 @@
   display: none;
 }
 
+.open-menu {
+  overflow: hidden;
+}
+
 @media (max-width: 1470px) {
   .header__telephone-items {
     width: 150px;
