@@ -13,7 +13,7 @@ footer {
 }
 
 .footer__container {
-  width: calc (100vw - 17px);
+  width: calc(100vw - 17px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
