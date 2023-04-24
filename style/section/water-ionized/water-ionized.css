@@ -15,6 +15,7 @@
   background-image: url(./../../../assets/img/sections/water-ionized/background.png);
   background-size: 1245px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .water-ionized__container {
