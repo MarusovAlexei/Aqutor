@@ -13,7 +13,7 @@ footer {
 }
 
 .footer__container {
-  max-width: calc(100vw - 17px);
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,6 +32,10 @@ footer {
 }
 
 @media (max-width: 785px) {
+  .footer {
+    width: 100vw;
+  }
+
   .footer__container {
     flex-wrap: wrap;
     justify-content: center;
