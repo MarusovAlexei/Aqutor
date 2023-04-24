@@ -8,9 +8,7 @@
 
 footer {
   min-height: 501px;
-  width: calc(100vw - 17px);
   background-color: var(--main-color);
-
   position: absolute;
 }
 

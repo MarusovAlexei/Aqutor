@@ -97,6 +97,9 @@ footer .ball {
 }
 
 @media (max-width: 785px) {
+  footer .gooey-animations {
+    width: 100%;
+  }
   footer .gooey-animations::after {
     height: 700px;
   }
