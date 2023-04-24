@@ -3,7 +3,7 @@
 .footer__container-right-content {
   display: flex;
   flex-direction: column;
-  width: 420px;
+  max-width: 420px;
   padding: 93px 10px 10px;
 }
 
