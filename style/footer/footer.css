@@ -9,18 +9,18 @@
 footer {
   min-height: 501px;
   background-color: var(--main-color);
+  width: calc(100vw - 17px);
   position: absolute;
 }
 
 .footer__container {
-  width: calc(100vw - 17px);
+  max-width: var(--desktop);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   height: 100%;
   padding: 140px 10px 10px;
-
   position: relative;
   z-index: 10;
 }
