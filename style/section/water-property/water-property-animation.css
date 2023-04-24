@@ -61,7 +61,7 @@
 .property-water-bg__animation.water-bg-show {
   opacity: 1;
   transition: all 2s;
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 
 .property-water__animation {
@@ -71,7 +71,7 @@
 .property-water__animation.water-show {
   opacity: 1;
   transition: all 2s;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 
 .property-text__animation {
@@ -81,7 +81,7 @@
 .property-text__animation.show-text {
   opacity: 1;
   transition: all 1s;
-  transition-delay: 1s;
+  transition-delay: 0.75s;
 }
 
 @media (max-width: 785px) {
@@ -110,6 +110,6 @@
 
   .property-text__animation.show-text {
     transition: all var(--transition-time);
-    transition-delay: 1s;
+    transition-delay: 0.75s;
   }
 }

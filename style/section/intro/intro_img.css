@@ -83,8 +83,9 @@
     width: 300px;
     height: 200px;
     position: relative;
+    gap: 10px;
     top: 0;
-    left: 0;
+    left: 30px;
   }
 
   .intro__img-ionizer img {
@@ -94,20 +95,19 @@
 
   .intro__img-bottle {
     width: 65px;
-    left: 35px;
+    left: 55px;
     top: 69px;
   }
 
   .intro__img-water1 {
-    top: -10px;
-    left: 31px;
+    left: 69px;
+    top: -20px;
     width: 123px;
   }
 
   .intro__img-water2 {
-    top: 29px;
-
-    right: 0;
+    top: 22px;
+    right: -31px;
     width: 127px;
   }
 

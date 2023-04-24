@@ -35,7 +35,8 @@
 @media (max-width: 785px) {
   .intro {
     padding-top: 120px;
-    min-height: 830px;
+    min-height: 800px;
+    background-size: 1757px;
   }
 
   .intro__container {
@@ -44,8 +45,8 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .intro {
-    min-height: 730px;
+    min-height: 735px;
   }
 }

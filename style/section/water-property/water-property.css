@@ -21,3 +21,9 @@
   position: relative;
   height: 100vh;
 }
+
+@media (max-width: 785px) {
+  .water-property {
+    padding-top: 0;
+  }
+}
