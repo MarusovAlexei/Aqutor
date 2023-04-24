@@ -147,6 +147,28 @@
   background: none;
 }
 
+@media (max-width: 1470px) {
+  .card-items {
+    max-width: 1000px;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 985px) {
+  .card-items {
+    max-width: 590px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 630px) {
+  .card-items {
+    max-width: 500px;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 785px) {
   .card-item__price {
     font-size: 20px;
