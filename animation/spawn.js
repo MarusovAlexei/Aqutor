@@ -74,12 +74,12 @@ spawn("ionized-glass__animation", "show-glass");
 spawn("opinion__description-text__animation", "show-text");
 // image
 spawn("opinion__description-img__animation", "show-img");
-// batton
+// button
 spawn("opinion__description-btn__animation", "show-btn");
 
 /* intro */
 
-// batton
+// button
 spawn("intro-btn__animation", "show-btn");
 // ionizer
 spawn("ionizer__animation", "ionizer-show");
@@ -88,3 +88,14 @@ spawn("bottle__animation", "bottle-show");
 // water
 spawn("water1__animation", "water1-show");
 spawn("water2__animation", "water2-show");
+
+/* our products */
+
+// label
+spawn("card-lable__animation", "show-label");
+// item
+spawn("card-item__animation", "show-item");
+// text
+spawn("card-text__animation", "show-text");
+// btn
+spawn("card-btn__animation", "show-btn");

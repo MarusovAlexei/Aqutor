@@ -1,9 +1,10 @@
 @import "./../../variables.css";
 
 @import "./our-products-cards.css";
+@import "./our-products-animation.css";
 
 .our-products {
-  min-height: 1270px;
+  min-height: 1130px;
   position: relative;
   z-index: 1;
 
@@ -62,7 +63,7 @@
 
   .our-products__container {
     padding-top: 25px;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
   }
 
   .our-products__header {

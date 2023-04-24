@@ -1,0 +1,28 @@
+.card-lable__animation {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.card-item__animation {
+  opacity: 0;
+}
+
+.card-text__animation {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.card-btn__animation {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card-lable__animation.show-label,
+.card-item__animation.show-item,
+.card-text__animation.show-text,
+.card-btn__animation.show-btn {
+  opacity: 1;
+  transition: 1s;
+  transform: translateX(0%);
+  transform: translateY(0%);
+}

@@ -1,0 +1,139 @@
+@import "./../variables.css";
+
+/* SVG styles */
+.footer-svg {
+  width: 100vw;
+}
+
+.viewBox {
+  width: calc(100vw - 17px);
+}
+
+/* Footer styles */
+
+footer .gooey-animations {
+  overflow: hidden;
+  position: absolute;
+  width: calc(100vw - 17px);
+  height: 100%;
+  bottom: 0;
+  filter: url("#goo");
+}
+
+footer .gooey-animations::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 490px;
+  clip-path: url("#wave");
+  background-color: #151a3b;
+}
+
+footer .ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #28323b;
+  position: absolute;
+  animation: up 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+}
+
+@keyframes up {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 480px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@keyframes up-small {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1280px) {
+  footer .gooey-animations::after {
+    width: 100%;
+    height: 530px;
+    clip-path: ellipse(95% 100% at 50% 100%);
+  }
+
+  @keyframes up {
+    0% {
+      bottom: 0px;
+      width: 100px;
+      height: 100px;
+    }
+    50% {
+      bottom: 500px;
+    }
+    100% {
+      bottom: 0px;
+      width: 0px;
+      height: 0px;
+    }
+  }
+}
+
+@media (max-width: 785px) {
+  footer .gooey-animations::after {
+    height: 700px;
+  }
+  @keyframes up {
+    0% {
+      bottom: 0px;
+      width: 100px;
+      height: 100px;
+    }
+    50% {
+      bottom: 680px;
+    }
+    100% {
+      bottom: 0px;
+      width: 0px;
+      height: 0px;
+    }
+  }
+}
+
+@media (max-width: 608px) {
+  footer .gooey-animations::after {
+    height: 975px;
+  }
+  @keyframes up {
+    0% {
+      bottom: 0px;
+      width: 100px;
+      height: 100px;
+    }
+    50% {
+      bottom: 930px;
+    }
+    100% {
+      bottom: 0px;
+      width: 0px;
+      height: 0px;
+    }
+  }
+}
