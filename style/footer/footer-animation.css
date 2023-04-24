@@ -72,7 +72,7 @@ footer .ball {
 @media (max-width: 1280px) {
   footer .gooey-animations::after {
     height: 530px;
-    clip-path: ellipse(95% 100% at 50% 100%);
+    clip-path: ellipse(99% 100% at 50% 100%);
   }
 
   @keyframes up {
