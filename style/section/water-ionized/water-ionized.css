@@ -11,9 +11,10 @@
   flex-direction: column;
   align-items: center;
   min-height: 1030px;
-  padding-top: 162px;
+  padding-top: 200px;
   background-image: url(./../../../assets/img/sections/water-ionized/background.png);
-  background-position: bottom;
+  background-size: 1245px;
+  background-repeat: no-repeat;
 }
 
 .water-ionized__container {
