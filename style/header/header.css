@@ -12,6 +12,7 @@ header {
   border-bottom: 2px solid var(--line-color);
   position: absolute;
   z-index: 6;
+  width: calc(100vw - 17px);
 }
 
 .header__container {
