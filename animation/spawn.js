@@ -99,3 +99,12 @@ spawn("card-item__animation", "show-item");
 spawn("card-text__animation", "show-text");
 // btn
 spawn("card-btn__animation", "show-btn");
+
+/* questions */
+
+// accrodion content
+spawn("accordion-item__animation", "show-accordion");
+// accordion btn
+spawn("accordion-btn__animation", "show-accordion-btn");
+// accordion reverce
+spawn("accordion-item__reverse-animation", "show-reverse-accordion")

@@ -1,0 +1,32 @@
+.accordion-item__animation {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.accordion-item__animation.show-accordion {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+
+.accordion-btn__animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.accordion-btn__animation.show-accordion-btn {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+.accordion-item__reverse-animation {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.accordion-item__reverse-animation.show-reverse-accordion {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}

@@ -38,11 +38,17 @@
 }
 
 .accordion-item__content p,
-.accordion-item__content div {
+.questions__text-wrapper-item2 {
   font-size: 18px;
   font-family: "Exo2-Regular";
   padding: 10px;
   line-height: 1.5;
+}
+
+.questions__text-wrapper-item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input[type="checkbox"]:checked
