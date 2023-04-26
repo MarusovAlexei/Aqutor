@@ -62,6 +62,21 @@
 }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url(./fonts/Roboto/Roboto-Bold.ttf);
+  font-family: "Exo2-Regular";
+  src: url(./fonts/Exo/Exo2-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url(./fonts/Exo/Exo2-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url(./fonts/Exo/Exo2-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url(./fonts/Exo/Exo2-Bold.ttf);
 }
