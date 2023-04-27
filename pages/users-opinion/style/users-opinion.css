@@ -1,0 +1,25 @@
+@import "./users-opinion-slider.css";
+
+.users-opinion__container {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+.users-opinion__header h2 {
+  font-family: "Exo2-Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to left, #448aff, #24d2aa);
+  color: transparent;
+}

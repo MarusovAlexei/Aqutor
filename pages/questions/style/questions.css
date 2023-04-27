@@ -6,6 +6,19 @@ main {
   min-height: 100vh;
 }
 
+header {
+  background-color: var(--main-color);
+}
+
+body {
+  background: none;
+  background-color: #f3f7fb;
+}
+
+footer {
+  background: none;
+}
+
 .questions__container {
   max-width: 1440px;
   min-height: 100vh;
@@ -20,7 +33,10 @@ main {
   line-height: 48px;
   letter-spacing: -0.04em;
   text-align: center;
-  margin-bottom: 65px;
+  margin: 0 auto;
+  min-height: 112px;
+  max-width: 928px;
+  border-bottom: 1px solid #c1d5e0;
 }
 
 .gradient-text {
@@ -28,4 +44,17 @@ main {
   -webkit-background-clip: text;
   background-image: linear-gradient(to left, #448aff, #24d2aa);
   color: transparent;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .questions__header h2 {
+    font-size: 28px;
+    min-height: 69px;
+  }
 }

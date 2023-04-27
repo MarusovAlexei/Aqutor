@@ -1,21 +1,21 @@
 .accordion {
   width: 100%;
-  max-width: 800px;
+  max-width: 966px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .accordion-item {
   margin: 0 0 10px;
-  background: rgb(255, 255, 255);
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  min-height: 96px;
+  background: none;
+  border-bottom: 1px solid #ccc;
   overflow: hidden;
 }
 
 .accordion-item__title {
   display: block;
-  padding: 10px;
+  padding: 10px 30px 10px 10px;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -25,6 +25,7 @@
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  margin-top: 20px;
 }
 
 .accordion-item__content {
@@ -39,6 +40,7 @@
 
 .accordion-item__content p,
 .questions__text-wrapper-item2 {
+  color: black;
   font-size: 18px;
   font-family: "Exo2-Regular";
   padding: 10px;
@@ -82,6 +84,7 @@ input[type="checkbox"]:checked
   margin: 10px auto;
   display: block;
   cursor: pointer;
+  color: black;
 }
 
 .item-4__link {
@@ -89,12 +92,33 @@ input[type="checkbox"]:checked
   text-align: center;
 }
 
-@media (max-width: 400px) {
-  .questions__header h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
+.accordion-item__title {
+  position: relative;
+}
 
+.accordion-item__title::after {
+  content: url("./../../../assets/img/pages/questions/closed_arrow.png");
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transition: 1s;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + .accordion-item__title::after {
+  transition: 1s;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 767px) {
+  .accordion-item__title::after {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
   .accordion-item__title {
     font-size: 18px;
     line-height: 25px;
