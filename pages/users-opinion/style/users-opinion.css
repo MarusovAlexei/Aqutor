@@ -64,10 +64,19 @@ footer {
   header {
     width: 100vw;
   }
+
+  .badge {
+    width: 320px !important;
+  }
+
+  .users-opinion__header h2 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 400px) {
-  .questions__header h2 {
+  .users-opinion__container h2,
+  .users-opinion__container h3 {
     font-size: 28px;
     min-height: 69px;
   }

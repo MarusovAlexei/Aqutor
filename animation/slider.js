@@ -65,7 +65,6 @@ function updateSlide() {
   sliderText.querySelector(".text-4").textContent =
     sliderTextArray[3][currentSlide];
   sliderImage.setAttribute("src", sliderImageArray[currentSlide]);
-  /*   sliderText.querySelectorAll(".text")[currentSlide].classList.add("active"); //ll */
   sliderCaption.textContent = sliderCaptionArray[currentSlide];
   sliderCaption2.textContent = sliderCaptionArray2[currentSlide];
 }

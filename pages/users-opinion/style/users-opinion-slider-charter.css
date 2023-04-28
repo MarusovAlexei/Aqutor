@@ -1,39 +1,100 @@
+@import "./../../../style/variables.css";
+
 .slider2-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 928px;
+  min-height: 700px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 64px;
+}
+
+.slider2-image {
+  padding: 10px;
+  min-height: 700px;
+  width: 448px;
+  margin: 0 auto;
+}
+
+.slider2-image img {
   width: 100%;
-  overflow: hidden;
+
+  border-radius: 10px;
 }
 
-.slider2-wrapper {
+.slider2-navigation {
+  width: calc(100% + 160px);
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  transition: transform 0.3s ease;
 }
 
-.slider2-item {
-  flex-shrink: 0;
-  width: calc(100% / 3);
-  text-align: center;
-  font-size: 24px;
-  padding: 20px;
-}
-
-@media screen and (max-width: 1000px) {
-  .slider2-item {
-    width: 100%;
-  }
-}
-
-.slider2-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.slider2-control {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  color: #333;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
+.slider2-arrow {
+  height: 64px;
+  width: 64px;
+  border: 1.5px solid #448aff;
+  border-radius: 50%;
   margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider2-arrow-left::before {
+  content: "←";
+}
+
+.slider2-arrow-right::before {
+  content: "→";
+}
+
+.slider2-arrow-left::before,
+.slider2-arrow-right::before {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: scale(1.6);
+  color: #448aff;
+}
+
+.slider2-arrow:hover {
+  transition: 0.75s;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .slider2-container {
+    flex-direction: column-reverse;
+    max-width: 400px;
+    justify-content: flex-end;
+  }
+
+  .slider2-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .slider2-navigation {
+    margin: 0 auto;
+    justify-content: center;
+    max-width: calc(100% - 20px);
+    transform: translateX(0);
+    position: absolute;
+    left: 0;
+    top: 570px;
+    gap: 30%;
+  }
+
+  .slider2-image {
+    min-height: 640px;
+    padding: 10px;
+  }
+
+  .slider2-image img {
+    border-radius: 20px;
+  }
 }

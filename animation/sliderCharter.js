@@ -1,41 +1,37 @@
-const sliderWrapper = document.querySelector(".slider2-wrapper");
-const sliderItems = document.querySelectorAll(".slider2-item");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+const sliderImageTwo = document.querySelector(".slider2-image img");
+const sliderArrowLeftTwo = document.querySelector(".slider2-arrow-left");
+const sliderArrowRightTwo = document.querySelector(".slider2-arrow-right");
 
-let currentIndex = 0;
-let step;
+const sliderImageArrayTwo = [
+  "./../../assets/img/pages/opimion/1.jpg",
+  "./../../assets/img/pages/opimion/2.jpg",
+  "./../../assets/img/pages/opimion/3.jpg",
+  "./../../assets/img/pages/opimion/4.jpg",
+  "./../../assets/img/pages/opimion/5.jpg",
+];
 
-function updateStep() {
-  const windowWidth = window.innerWidth;
-  if (windowWidth > 1000) {
-    step = sliderItems[0].offsetWidth * 3;
-  } else {
-    step = sliderItems[0].offsetWidth;
-  }
+let currentSlideTwo = 0;
+
+function updateSlideTwo() {
+  sliderImageTwo.setAttribute("src", sliderImageArrayTwo[currentSlideTwo]);
 }
 
-updateStep();
-
-function updateSliderPosition() {
-  sliderWrapper.style.transform = `translateX(-${currentIndex * step}px)`;
+function handleArrowClickTwo(event) {
+  if (event.target === sliderArrowLeftTwo) {
+    currentSlideTwo--;
+    if (currentSlideTwo < 0) {
+      currentSlideTwo = sliderImageArrayTwo.length - 1;
+    }
+  } else if (event.target === sliderArrowRightTwo) {
+    currentSlideTwo++;
+    if (currentSlideTwo > sliderImageArrayTwo.length - 1) {
+      currentSlideTwo = 0;
+    }
+  }
+  updateSlideTwo();
 }
 
-prevBtn.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateSliderPosition();
-  }
-});
+sliderArrowLeftTwo.addEventListener("click", handleArrowClickTwo);
+sliderArrowRightTwo.addEventListener("click", handleArrowClickTwo);
 
-nextBtn.addEventListener("click", () => {
-  if (currentIndex < sliderItems.length - 3) {
-    currentIndex++;
-    updateSliderPosition();
-  }
-});
-
-window.addEventListener("resize", () => {
-  updateStep();
-  updateSliderPosition();
-});
+updateSlideTwo();
