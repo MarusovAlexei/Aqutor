@@ -80,6 +80,10 @@ footer {
 }
 
 @media (max-width: 785px) {
+  header {
+    width: 100vw;
+  }
+
   .our-products__container {
     padding-top: 25px;
     padding-bottom: 25px;
