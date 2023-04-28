@@ -1,7 +1,7 @@
 @import "./../../../style/variables.css";
 
-@import "./shope-cards.css";
-@import "./shope-animation.css";
+@import "./shop-cards.css";
+@import "./shop-animation.css";
 
 main {
   min-height: 100vh;
@@ -46,12 +46,13 @@ footer {
   top: -150px;
 }
 
-.shope__header {
+.shop__header {
   margin: 0 auto;
   max-width: 1440px;
+  width: 100%;
 }
 
-.shope__header h2 {
+.shop__header h2 {
   font-family: "Exo2-Bold";
   font-size: 48px;
   font-weight: 700;
