@@ -1,0 +1,96 @@
+@import "./../../../style/variables.css";
+
+@import "./shope-cards.css";
+@import "./shope-animation.css";
+
+main {
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+body {
+  background: none;
+  background-color: #f3f7fb;
+}
+
+footer {
+  background: none;
+}
+
+.our-products {
+  min-height: 1130px;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  background-color: #f3f7fb;
+  padding-top: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.our-products__container {
+  max-width: 1440px;
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+.our-products__img {
+  top: -150px;
+}
+
+.shope__header {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.shope__header h2 {
+  font-family: "Exo2-Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 112px;
+  max-width: 928px;
+  border-bottom: 1px solid #c1d5e0;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to left, #448aff, #24d2aa);
+  color: transparent;
+}
+
+.our-products__btn-shope {
+  margin-top: 19px;
+  width: 241px;
+  height: 81px;
+  font-size: 23px;
+}
+
+@media (max-width: 785px) {
+  .our-products__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .our-products__header {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .our-products__header {
+    font-size: 20px;
+  }
+}

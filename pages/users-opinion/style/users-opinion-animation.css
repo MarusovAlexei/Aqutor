@@ -1,0 +1,10 @@
+.opinion-text__animation {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.opinion-text__animation.show-text__animation {
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateX(0);
+}

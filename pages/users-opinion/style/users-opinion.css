@@ -1,4 +1,24 @@
+@import "./../../../style/variables.css";
 @import "./users-opinion-slider.css";
+@import "./users-opinion-animation.css";
+@import "./users-opinion-slider-charter.css";
+
+main {
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+body {
+  background: none;
+  background-color: #f3f7fb;
+}
+
+footer {
+  background: none;
+}
 
 .users-opinion__container {
   max-width: 1440px;
@@ -14,7 +34,23 @@
   line-height: 48px;
   letter-spacing: -0.04em;
   text-align: center;
-  margin-bottom: 65px;
+  margin: 0 auto;
+  min-height: 112px;
+  max-width: 928px;
+  border-bottom: 1px solid #c1d5e0;
+}
+
+.reviews {
+  font-family: "Exo2-SemiBold";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  min-height: 60px;
+}
+
+.reviews-map {
+  margin-bottom: 70px;
 }
 
 .gradient-text {
@@ -22,4 +58,17 @@
   -webkit-background-clip: text;
   background-image: linear-gradient(to left, #448aff, #24d2aa);
   color: transparent;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .questions__header h2 {
+    font-size: 28px;
+    min-height: 69px;
+  }
 }

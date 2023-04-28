@@ -1,0 +1,39 @@
+.slider2-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider2-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider2-item {
+  flex-shrink: 0;
+  width: calc(100% / 3);
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .slider2-item {
+    width: 100%;
+  }
+}
+
+.slider2-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider2-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}

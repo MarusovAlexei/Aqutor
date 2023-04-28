@@ -107,4 +107,8 @@ spawn("accordion-item__animation", "show-accordion");
 // accordion btn
 spawn("accordion-btn__animation", "show-accordion-btn");
 // accordion reverce
-spawn("accordion-item__reverse-animation", "show-reverse-accordion")
+spawn("accordion-item__reverse-animation", "show-reverse-accordion");
+
+/* users-opinion */
+
+
