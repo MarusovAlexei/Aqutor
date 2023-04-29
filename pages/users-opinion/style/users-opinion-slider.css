@@ -116,12 +116,14 @@
   opacity: 1;
 }
 
-.slider-image img {
+.slider-image img,
+.slider2-image img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
-.slider-image img.active {
+.slider-image img.active,
+.slider2-image img.active {
   opacity: 1;
 }
 

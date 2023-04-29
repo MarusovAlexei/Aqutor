@@ -14,6 +14,10 @@ let currentSlideTwo = 0;
 
 function updateSlideTwo() {
   sliderImageTwo.setAttribute("src", sliderImageArrayTwo[currentSlideTwo]);
+  sliderImageTwo.classList.remove("active");
+  setTimeout(() => {
+    sliderImageTwo.classList.add("active");
+  }, 500);
 }
 
 function handleArrowClickTwo(event) {
