@@ -116,6 +116,34 @@
   opacity: 1;
 }
 
+.slider-image img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image img.active {
+  opacity: 1;
+}
+
+.slider-text .text-1,
+.slider-text .text-2,
+.slider-text .text-3,
+.slider-text .text-4,
+.slider-caption,
+.slider-caption2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-text .text-1.active,
+.slider-text .text-2.active,
+.slider-text .text-3.active,
+.slider-text .text-4.active,
+.slider-caption.active,
+.slider-caption2.active {
+  opacity: 1;
+}
+
 @media (max-width: 1100px) {
   .slider-container {
     flex-direction: column-reverse;

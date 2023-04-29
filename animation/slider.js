@@ -56,17 +56,35 @@ const sliderCaptionArray2 = [
 let currentSlide = 0;
 
 function updateSlide() {
-  sliderText.querySelector(".text-1").textContent =
-    sliderTextArray[0][currentSlide];
-  sliderText.querySelector(".text-2").textContent =
-    sliderTextArray[1][currentSlide];
-  sliderText.querySelector(".text-3").textContent =
-    sliderTextArray[2][currentSlide];
-  sliderText.querySelector(".text-4").textContent =
-    sliderTextArray[3][currentSlide];
-  sliderImage.setAttribute("src", sliderImageArray[currentSlide]);
-  sliderCaption.textContent = sliderCaptionArray[currentSlide];
-  sliderCaption2.textContent = sliderCaptionArray2[currentSlide];
+  sliderText.querySelector(".text-1.active").classList.remove("active");
+  sliderText.querySelector(".text-2.active").classList.remove("active");
+  sliderText.querySelector(".text-3.active").classList.remove("active");
+  sliderText.querySelector(".text-4.active").classList.remove("active");
+  sliderCaption.classList.remove("active");
+  sliderCaption2.classList.remove("active");
+  sliderImage.classList.remove("active");
+
+  setTimeout(() => {
+    sliderText.querySelector(".text-1").textContent =
+      sliderTextArray[0][currentSlide];
+    sliderText.querySelector(".text-2").textContent =
+      sliderTextArray[1][currentSlide];
+    sliderText.querySelector(".text-3").textContent =
+      sliderTextArray[2][currentSlide];
+    sliderText.querySelector(".text-4").textContent =
+      sliderTextArray[3][currentSlide];
+    sliderImage.setAttribute("src", sliderImageArray[currentSlide]);
+    sliderCaption.textContent = sliderCaptionArray[currentSlide];
+    sliderCaption2.textContent = sliderCaptionArray2[currentSlide];
+
+    sliderText.querySelector(".text-1").classList.add("active");
+    sliderText.querySelector(".text-2").classList.add("active");
+    sliderText.querySelector(".text-3").classList.add("active");
+    sliderText.querySelector(".text-4").classList.add("active");
+    sliderCaption.classList.add("active");
+    sliderCaption2.classList.add("active");
+    sliderImage.classList.add("active");
+  }, 500);
 }
 
 function handleArrowClick(event) {
