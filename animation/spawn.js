@@ -112,7 +112,12 @@ spawn("accordion-item__reverse-animation", "show-reverse-accordion");
 /* knowledge */
 
 // image
-spawn("knowledge-img__animation","img-show");
+spawn("knowledge-img__animation", "img-show");
 // description
-spawn("knowledge-img__text","text-show");
+spawn("knowledge-img__text", "text-show");
 
+/* general */
+spawn("from-left__text", "text-show");
+spawn("from-right__text", "text-show");
+spawn("from-top__text", "text-show");
+spawn("from-bottomn__text", "text-show");

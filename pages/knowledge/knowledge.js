@@ -92,7 +92,7 @@ const addItem = (
 addItem(
   "Худеющим",
   "Ионизированная вода и потеря веса",
-  "#",
+  "./../knowledge-item/knowledge-item.html",
   "Как и многие люди, я долгое время желала похудеть. Хочу поделиться своей историей о том, как мне помогла ионизированная вода!",
   "./../../assets/img/pages/knowledge/item1.png",
   "./../../assets/img/pages/knowledge/autors/smolohin.png",
@@ -104,7 +104,7 @@ addItem(
 addItem(
   "Худеющим",
   "Ионизированная вода и потеря веса",
-  "#",
+  "./../knowledge-item/knowledge-item.html",
   "Как и многие люди, я долгое время желала похудеть. Хочу поделиться своей историей о том, как мне помогла ионизированная вода!",
   "./../../assets/img/pages/knowledge/item1.png",
   "./../../assets/img/pages/knowledge/autors/smolohin.png",

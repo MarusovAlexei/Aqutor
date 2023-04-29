@@ -1,0 +1,119 @@
+.kl-title__wripper {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0 10px;
+}
+
+.title__recomendation {
+  display: flex;
+  padding-top: 16px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2f1f8;
+}
+
+.recomendation__autor {
+  display: flex;
+}
+
+.autor__avatar img {
+  border-radius: 50px;
+}
+
+.autor__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+.author-name a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 115%;
+  color: #263238;
+}
+
+.author-proff {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #90a4ae;
+}
+
+.recomendation__button {
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  color: #ffffff;
+}
+
+.recomendation__button a {
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  color: #448aff;
+  background-color: #ffffff;
+}
+
+.title__header {
+  margin-top: 26px;
+}
+
+.page-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #263238;
+}
+
+.title__bottom {
+  font-size: 12px;
+  line-height: 1.32;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.title__bottom span {
+  font-weight: 600;
+  color: #263238;
+}
+
+.title__bottom ul {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+
+.title__bottom li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  line-height: 1.4;
+  margin-right: 20px;
+}
+
+.title__bottom li span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  color: #90a4ae !important;
+}
