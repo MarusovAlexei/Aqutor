@@ -1,4 +1,5 @@
 @import "./contacts-slider.css";
+@import "./../../../style/variables.css";
 
 main {
     min-height: 100vh;
@@ -48,6 +49,7 @@ main {
   }
 
   .city-name {
+    font-family: "Exo2-Medium";
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -75,10 +77,10 @@ main {
 
   .slider-navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     width: 100%;
-    /* margin-top: 20px; */
+    margin-top: 17px;
     position: absolute;
   }
 
@@ -114,21 +116,20 @@ main {
     background-color: #ffffff;
   }
 
-  .map{
-    text-align: center;
-    margin-top: -100px;
-    overflow: hidden;
-  }
+.slider-content {
+  opacity: 0;
+}
 
-  .map iframe:last-child {
-    display: none;
-  }
-
+.slider-content.active {
+  opacity: 1;
+  transition: 0.5s;
+}
 
   .dropdown-container {
     /* position: relative; */
     display: inline-block;
     margin-right: 20px;
+    
   }
   
   .dropdown-header {
@@ -138,6 +139,9 @@ main {
     padding: 10px;
     /* background-color: #f0f0f0; */
     cursor: pointer;
+    position: relative;
+    
+    
   }
   
   .dropdown-header-text {
@@ -147,7 +151,24 @@ main {
   
   .dropdown-arrow {
     font-size: 14px;
+    content: url(../../../pages/../assets/img/pages/questions/closed_arrow.png);
+    display: inline-block;
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    
+    transition: transform 0.3s ease-in-out;
   }
+
+  .dropdown-arrow::after {
+  }
+
+  .dropdown-arrow-open {
+    transform: translateY(-50%) rotate(90deg);
+  
+  }
+
+  
   
   .dropdown-content {
     position: absolute;
@@ -177,8 +198,42 @@ main {
     margin-top: 80px;
     margin-bottom: 100px;
     text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    gap: 40px;
   }
 
+
+
+  .map {
+    text-align: center;
+    margin-top: -100px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .map.active {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .map-container iframe {
+    text-align: center;
+  }
+  
+  .map iframe:last-child {
+    display: none;
+  }
+
+
+  
+  
   @media (max-width: 570px) {
     .city-name {
       font-size: 18px;
@@ -193,25 +248,53 @@ main {
       margin-top: 0;
       text-align: center;
     }
-
+  
     .map iframe:first-child {
       display: none;
     }
-
+  
     .map iframe:last-child {
       display: block;
-     margin: 0 auto;
+      margin: 0 auto;
     }
     .slider-left{
       width: 70%;
       margin-left: 0;
     }
+    .slider-navigation {
+      position: static;
+      margin-top: 0;
+      order: 2;
+    }
+    .dropdown {
+      flex-direction: column;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    .map {
+      /* margin-top: -50px; */
+     
+      margin: 20px auto;
+    }
   }
 
-  @media (max-width: 400px) {
 
+
+
+  
+  @media (max-width: 400px) {
     .dropdown {
       margin-top: 50px;
       margin-bottom: 50px;
+    }
+
+    .map {
+      /* margin-top: -50px; */
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .dropdown-arrow {
+      right: -20px;
     }
   }

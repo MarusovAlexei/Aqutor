@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./../../style/style.css" />
     <link rel="stylesheet" href="./style/contacts.css" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Aquator</title>
   </head>
@@ -61,7 +62,7 @@
     </header>
     <main>
       <div class="slider-container">
-        <div class="slider-content">
+        <div class="slider-content active">
           <div class="slider-left">
             <img
               src="./../../assets/img/pages/contacts/image 18.png"
@@ -90,26 +91,29 @@
           <div class="slider-arrow slider-arrow-right"></div>
         </div>
       </div>
-      <div class="map">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ae2345f146b4a56d4feae35723fb6d7426f776b86a76bcf79722b79464a57b1&amp;source=constructor"
-          width="800"
-          height="300"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ae2345f146b4a56d4feae35723fb6d7426f776b86a76bcf79722b79464a57b1&amp;source=constructor"
-          width="320"
-          height="240"
-          frameborder="0"
-        ></iframe>
+      <div class="map active">
+        <div class="map-container">
+          <iframe
+            id="map1"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ae2345f146b4a56d4feae35723fb6d7426f776b86a76bcf79722b79464a57b1&amp;source=constructor"
+            width="800"
+            height="300"
+            frameborder="0"
+          ></iframe>
+          <iframe
+            id="map2"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfb77f14b911e95a31f934d47fc698ac2a08d5273cb6c1830f51d1455647d62f&amp;source=constructor"
+            width="800"
+            height="300"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
-
       <div class="dropdown">
         <div class="dropdown-container">
           <div class="dropdown-header">
             <span class="dropdown-header-text">Контакты</span>
-            <span class="dropdown-arrow ">&nbsp; &#9660;</span>
+            <span class="dropdown-arrow"></span>
           </div>
           <div class="dropdown-content">
             <p>Адрес магазина info@akvatorn.ru</p>
@@ -124,7 +128,7 @@
         <div class="dropdown-container">
           <div class="dropdown-header">
             <span class="dropdown-header-text">Юридическая информация</span>
-            <span class="dropdown-arrow">&nbsp; &#9660;</span>
+            <span class="dropdown-arrow"></span>
           </div>
           <div class="dropdown-content">
             <p>Реквизиты: ИНН 123456789, КПП 123456789, ОГРН 123456789</p>
@@ -243,10 +247,9 @@
         </clipPath>
       </defs>
     </svg>
-
-    <script src="./../../animation/burger.js"></script>
-    <script src="./../../animation/spawn.js"></script>
-    <script src="./../../animation/footer.js"></script>
+    <script src="../../animation/burger.js"></script>
+    <script src="../..//animation/spawn.js"></script>
+    <script src="../../animation/footer.js"></script>
     <script src="./contacts.js"></script>
   </body>
 </html>
