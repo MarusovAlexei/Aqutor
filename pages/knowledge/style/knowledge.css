@@ -1,0 +1,53 @@
+@import "./../../style/variables.css";
+@import "./knowledge-content.css";
+
+main {
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+body {
+  background: none;
+  background-color: #f3f7fb;
+}
+
+footer {
+  background: none;
+}
+
+.knowledge__container {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+.knowledge__header h2 {
+  font-family: "Exo2-Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 112px;
+  max-width: 928px;
+  border-bottom: 1px solid #c1d5e0;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to left, #448aff, #24d2aa);
+  color: transparent;
+}
+
+@media (max-width: 1175px) {
+  .knowledge__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

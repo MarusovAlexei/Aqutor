@@ -1,0 +1,139 @@
+@import "./../../../style/variables.css";
+
+.knowledge__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.knowledge-items {
+  max-width: 100%;
+  height: 100%;
+}
+
+.knowledge-aside {
+  width: 300px;
+  padding: 0 20px 20px;
+  background-color: #dcdcdc;
+  min-height: 100%;
+}
+
+.knowledge-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.knowledge-item__img img {
+  width: 462px;
+}
+
+.knowledge-item__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 24px;
+  max-width: 400px;
+}
+
+.knowledge-item__subtitle {
+  font-family: "Exo2-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #448aff;
+}
+
+.knowledge-item__description h3 {
+  font-family: "Exo2-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.knowledge-item__description a {
+  color: #263238;
+}
+
+.knowledge-item__description a:hover {
+  color: grey;
+}
+
+.knowledge-item__content {
+  font-family: "Exo2-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #37474f;
+}
+
+.knowledge-item__content-bottomn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.knowledge-content-bottomn__left {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.knowledge-content-bottomn__left-img img {
+  border-radius: 100%;
+}
+
+.knowledge__left-description-name {
+  font-family: "Roboto-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.knowledge__left-description-doctor,
+.content-bottomn__right-value {
+  font-family: "Exo2-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #90a4ae;
+}
+
+@media (max-width: 1175px) {
+  .knowledge-aside {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .knowledge-item {
+    flex-direction: column;
+  }
+
+  .knowledge-item__img img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .knowledge-item__img img {
+    max-width: 320px;
+  }
+
+  .knowledge-item__description {
+    max-width: 320px;
+  }
+}
