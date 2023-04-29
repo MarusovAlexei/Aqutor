@@ -23,6 +23,7 @@
   background-color: #fff;
   display: flex;
   flex-direction: row;
+  margin-bottom: 32px;
 }
 
 .knowledge-item__img img {
@@ -111,6 +112,12 @@
   letter-spacing: 0em;
   text-align: left;
   color: #90a4ae;
+}
+
+.content-bottomn__right {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
 }
 
 @media (max-width: 1175px) {

@@ -1,5 +1,6 @@
 @import "./../../style/variables.css";
 @import "./knowledge-content.css";
+@import "./knowledge-animation.css";
 
 main {
   min-height: 100vh;

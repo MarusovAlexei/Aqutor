@@ -1,0 +1,21 @@
+.knowledge-img__animation {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.knowledge-img__animation.img-show {
+  opacity: 1;
+  transition: 0.75s;
+  transform: translateX(0%);
+}
+
+.knowledge-img__text {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.knowledge-img__text.text-show {
+  opacity: 1;
+  transition: 0.75s;
+  transform: translateX(0%);
+}
