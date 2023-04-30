@@ -1,7 +1,7 @@
 const sliderText = document.querySelector(".slider-text");
-const sliderImage = document.querySelector(".slider-image img");
-const sliderCaption = document.querySelector(".slider-caption2");
-const sliderCaption2 = document.querySelector(".slider-caption");
+const sliderImage = document.querySelector(".description-img__img img");
+const sliderCaption = document.querySelector(".description-img__name");
+const sliderCaption2 = document.querySelector(".description-img__doctor");
 const sliderArrowLeft = document.querySelector(".slider-arrow-left");
 const sliderArrowRight = document.querySelector(".slider-arrow-right");
 
@@ -33,10 +33,10 @@ const sliderTextArray = [
 ];
 
 const sliderImageArray = [
-  "./../../assets/img/pages/opimion/fedorov-1.webp",
-  "./../../assets/img/pages/opimion/dergunov-2.jpg",
-  "./../../assets/img/pages/opimion/aleksandrovskiy-3.jpg",
-  "./../../assets/img/pages/opimion/gavrilov-4.jpg",
+  "./../../assets/img/sections/doctors-opinion/doctor.png",
+  "./../../assets/img/sections/doctors-opinion/doctor.png",
+  "./../../assets/img/sections/doctors-opinion/doctor.png",
+  "./../../assets/img/sections/doctors-opinion/doctor.png",
 ];
 
 const sliderCaptionArray = [

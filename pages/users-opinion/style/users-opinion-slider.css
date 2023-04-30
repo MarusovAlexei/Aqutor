@@ -146,16 +146,57 @@
   opacity: 1;
 }
 
+.opinion-img {
+  width: 450px;
+}
+
+.opinion-name {
+  left: 0;
+  width: 100%;
+}
+
+.opinion-doctor {
+  left: 176px;
+}
+
+@media (max-width: 1572px) {
+  .slider-container {
+    align-items: flex-start;
+  }
+
+  .opinion-name {
+    top: 382px;
+  }
+
+  .opinion-doctor {
+    top: 450px;
+  }
+}
+
 @media (max-width: 1100px) {
   .slider-container {
     flex-direction: column-reverse;
-    max-width: 400px;
+    max-width: 320px;
   }
 
   .slider-text,
   .slider-image {
     width: 100%;
     padding: 0;
+  }
+
+  .opinion-img {
+    width: 320px;
+  }
+
+  .opinion-name {
+    top: 242px;
+    height: 140px;
+  }
+
+  .opinion-doctor {
+    top: 350px;
+    left: 55px;
   }
 
   .slider-navigation {
@@ -165,7 +206,7 @@
     transform: translateX(0);
     position: absolute;
     left: 0;
-    top: 500px;
+    top: 400px;
     gap: 30%;
   }
 
